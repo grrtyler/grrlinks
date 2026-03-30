@@ -602,6 +602,7 @@
 <footer>Green River Rentals · Internal Links · <a href="https://greenriverrental.com" target="_blank" style="color:var(--blue)">greenriverrental.com</a></footer>
 
 <script>
+
   // Live clock
   function updateClock() {
     const now = new Date();
@@ -668,8 +669,12 @@
     searchTerm.textContent = search.value.trim();
   });
 
+
   // ══════════════════════════════════════════
   //  Admin — password + GitHub API commit
+  // ══════════════════════════════════════════
+  document.addEventListener('DOMContentLoaded', function() {
+  // Admin — password + GitHub API commit
   // ══════════════════════════════════════════
   const ADMIN_PW  = 'grr2024';   // ← change this to your preferred password
   const LS_GH     = 'grr_gh_settings';
@@ -963,7 +968,7 @@
       btn.disabled = false;
     }
   });
-
+  });
 </script>
 
 <!-- Password modal -->
